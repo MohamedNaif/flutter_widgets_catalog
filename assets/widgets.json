@@ -1,0 +1,52 @@
+[
+  {
+    "id": "nav_bar",
+    "title": "NavigationBar",
+    "category": "Navigation",
+    "description": "Material 3 bottom navigation bar with destinations.",
+    "since": "Flutter 3.7"
+  },
+  {
+    "id": "search_anchor",
+    "title": "SearchBar & SearchAnchor",
+    "category": "Input",
+    "description": "Material 3 search components with suggestions.",
+    "since": "Flutter 3.10"
+  },
+  {
+    "id": "segmented_button",
+    "title": "SegmentedButton",
+    "category": "Input",
+    "description": "Material 3 segmented control for choosing options.",
+    "since": "Flutter 3.7"
+  },
+  {
+    "id": "badge",
+    "title": "Badge",
+    "category": "Display",
+    "description": "Small status descriptor attached to an icon.",
+    "since": "Flutter 3.7"
+  },
+  {
+    "id": "sliver_appbar_large",
+    "title": "SliverAppBar.large",
+    "category": "App Bar",
+    "description": "Large Material 3-style sliver app bar.",
+    "since": "Flutter 3.7"
+  },
+  {
+    "id": "filled_button",
+    "title": "FilledButton",
+    "category": "Buttons",
+    "description": "Material 3 filled button and variants.",
+    "since": "Flutter 3.7"
+  },
+  {
+    "id": "assist_chip",
+    "title": "AssistChip",
+    "category": "Chips",
+    "description": "Material 3 assist chip with icon.",
+    "since": "Flutter 3.7"
+  }
+]
+
