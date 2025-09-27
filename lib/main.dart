@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_widgets_catalog/accessibility.dart';
+import 'package:flutter_widgets_catalog/animation.dart';
 
 void main() {
   runApp(const NewWidgetsColumnApp());
@@ -192,64 +194,6 @@ class _Section {
   final String subtitle;
   final IconData icon;
   final Widget Function() pageBuilder;
-}
-
-// Accessibility Page
-class AccessibilityPage extends StatelessWidget {
-  const AccessibilityPage({super.key});
-
-  final List<String> widgets = const [
-    'Semantics',
-    'ExcludeSemantics',
-    'MergeSemantics',
-    'Tooltip',
-    'Focus',
-    'FocusScope',
-    'FocusNode',
-    'ExcludeFocus',
-  ];
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text('Accessibility'),
-        backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-      ),
-      body: _buildWidgetList(context, widgets),
-    );
-  }
-}
-
-// Animation Page
-class AnimationPage extends StatelessWidget {
-  const AnimationPage({super.key});
-
-  final List<String> widgets = const [
-    'AnimatedContainer',
-    'AnimatedOpacity',
-    'AnimatedPositioned',
-    'AnimationController',
-    'Hero',
-    'TweenAnimationBuilder',
-    'AnimatedBuilder',
-    'SlideTransition',
-    'FadeTransition',
-    'ScaleTransition',
-    'RotationTransition',
-    'AnimatedSwitcher',
-  ];
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text('Animation and Motion'),
-        backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-      ),
-      body: _buildWidgetList(context, widgets),
-    );
-  }
 }
 
 // Assets Page
