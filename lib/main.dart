@@ -2,11 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_widgets_catalog/accessibility.dart';
 import 'package:flutter_widgets_catalog/input.dart';
 import 'package:flutter_widgets_catalog/interaction_model.dart';
-import 'package:flutter_widgets_catalog/layout.dart';
 import 'package:flutter_widgets_catalog/paintiong_effects.dart';
-import 'package:flutter_widgets_catalog/scrolling.dart';
-import 'package:flutter_widgets_catalog/styling.dart';
-import 'package:flutter_widgets_catalog/text.dart';
 
 void main() {
   runApp(const NewWidgetsColumnApp());
@@ -57,35 +53,12 @@ class _NewWidgetsColumnPageState extends State<NewWidgetsColumnPage> {
       icon: Icons.touch_app_outlined,
       pageBuilder: InteractionPage.new,
     ),
-    _Section(
-      title: 'Layout',
-      subtitle: 'Arrange widgets in rows, columns, grids, and more.',
-      icon: Icons.dashboard_customize_outlined,
-      pageBuilder: LayoutPage.new,
-    ),
+
     _Section(
       title: 'Painting and effects',
       subtitle: 'Apply visual effects without changing layout.',
       icon: Icons.brush_outlined,
       pageBuilder: PaintingPage.new,
-    ),
-    _Section(
-      title: 'Scrolling',
-      subtitle: 'Scroll multiple widgets as children of the parent.',
-      icon: Icons.swap_vert,
-      pageBuilder: ScrollingPage.new,
-    ),
-    _Section(
-      title: 'Styling',
-      subtitle: 'Manage the theme and make your app responsive.',
-      icon: Icons.style_outlined,
-      pageBuilder: StylingPage.new,
-    ),
-    _Section(
-      title: 'Text',
-      subtitle: 'Display and style text.',
-      icon: Icons.text_fields_outlined,
-      pageBuilder: TextPage.new,
     ),
   ];
 
