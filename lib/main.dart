@@ -1,9 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_widgets_catalog/accessibility.dart';
-import 'package:flutter_widgets_catalog/animation.dart';
-import 'package:flutter_widgets_catalog/assets_images.dart';
-import 'package:flutter_widgets_catalog/async.dart';
-import 'package:flutter_widgets_catalog/basics.dart';
 import 'package:flutter_widgets_catalog/input.dart';
 import 'package:flutter_widgets_catalog/interaction_model.dart';
 import 'package:flutter_widgets_catalog/layout.dart';
@@ -48,30 +44,7 @@ class _NewWidgetsColumnPageState extends State<NewWidgetsColumnPage> {
       icon: Icons.accessibility_new,
       pageBuilder: AccessibilityPage.new,
     ),
-    _Section(
-      title: 'Animation and motion',
-      subtitle: 'Bring animations to your app.',
-      icon: Icons.animation,
-      pageBuilder: AnimationPage.new,
-    ),
-    _Section(
-      title: 'Assets, images, and icons',
-      subtitle: 'Manage assets, display images, and show icons.',
-      icon: Icons.image_outlined,
-      pageBuilder: AssetsPage.new,
-    ),
-    _Section(
-      title: 'Async',
-      subtitle: 'Widgets supporting async patterns in your Flutter apps.',
-      icon: Icons.timer_outlined,
-      pageBuilder: AsyncPage.new,
-    ),
-    _Section(
-      title: 'Basics',
-      subtitle: 'Widgets to know before building your first Flutter app.',
-      icon: Icons.extension_outlined,
-      pageBuilder: BasicsPage.new,
-    ),
+
     _Section(
       title: 'Input',
       subtitle: 'Take user input with Material and Cupertino.',
@@ -205,4 +178,3 @@ class _Section {
   final IconData icon;
   final Widget Function() pageBuilder;
 }
-
